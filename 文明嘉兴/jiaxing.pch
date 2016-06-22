@@ -1,0 +1,32 @@
+//
+//  jiaxing.pch
+//  文明嘉兴
+//
+//  Created by yangwei on 16/6/6.
+//  Copyright © 2016年 yangwei. All rights reserved.
+//
+
+#ifndef jiaxing_pch
+#define jiaxing_pch
+
+#import "News.h"
+#import "Banner.h"
+#import "NewsTableViewCell.h"
+#import "AFNetworking.h"
+#import "UIKit+AFNetworking.h"
+#import "SDCycleScrollView.h"
+#import "MJRefresh.h"
+#import "MJExtension.h"
+
+
+
+#define GetNewsDataNotification @"getDataNotification"
+#define GetBannerDataNotification @"getBanner"
+
+#define HTTP_HOST @"http://jxwm.gkmm.net:8989/news/"
+#define HTTP_NEWS @"news/getNewsByCategoryId.do"
+#define HTTP_BANNER @"newsCategory/getBanner.do"
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+
+#endif /* jiaxing_pch */
