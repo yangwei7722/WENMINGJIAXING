@@ -9,10 +9,7 @@
 /* Begin PBXBuildFile section */
 		4430E3D01D11497B00C160B6 /* Banner.m in Sources */ = {isa = PBXBuildFile; fileRef = 4430E3CD1D11497B00C160B6 /* Banner.m */; };
 		4430E3D11D11497B00C160B6 /* News.m in Sources */ = {isa = PBXBuildFile; fileRef = 4430E3CF1D11497B00C160B6 /* News.m */; };
-		4430E3D51D114C6C00C160B6 /* MoralsModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 4430E3D41D114C6C00C160B6 /* MoralsModel.m */; };
-		4430E3D81D114C9000C160B6 /* MoralsModelBanner.m in Sources */ = {isa = PBXBuildFile; fileRef = 4430E3D71D114C9000C160B6 /* MoralsModelBanner.m */; };
 		4430E3DC1D114D6900C160B6 /* NewsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4430E3DB1D114D6900C160B6 /* NewsViewController.m */; };
-		4430E3E01D114E4800C160B6 /* MaralsModelViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4430E3DF1D114E4800C160B6 /* MaralsModelViewController.m */; };
 		4430E3EF1D115AB300C160B6 /* YcSegmentView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4430E3EE1D115AB300C160B6 /* YcSegmentView.m */; };
 		44417F6D1D07BF49007E6A6E /* NewsTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 44417F6B1D07BF49007E6A6E /* NewsTableViewCell.m */; };
 		44417F6E1D07BF49007E6A6E /* NewsTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 44417F6C1D07BF49007E6A6E /* NewsTableViewCell.xib */; };
@@ -28,6 +25,7 @@
 		446054F21D0D21E200EADD6B /* NSObject+MJKeyValue.m in Sources */ = {isa = PBXBuildFile; fileRef = 446054E51D0D21E200EADD6B /* NSObject+MJKeyValue.m */; };
 		446054F31D0D21E200EADD6B /* NSObject+MJProperty.m in Sources */ = {isa = PBXBuildFile; fileRef = 446054E71D0D21E200EADD6B /* NSObject+MJProperty.m */; };
 		446054F41D0D21E200EADD6B /* NSString+MJExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 446054E91D0D21E200EADD6B /* NSString+MJExtension.m */; };
+		446213101D1C115100E58D81 /* NewsDetail.m in Sources */ = {isa = PBXBuildFile; fileRef = 4462130F1D1C115100E58D81 /* NewsDetail.m */; };
 		44648B001D07B9A600B0067D /* loadFalied.png in Resources */ = {isa = PBXBuildFile; fileRef = 44648AFC1D07B9A600B0067D /* loadFalied.png */; };
 		44648B051D07B9B400B0067D /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 44648B041D07B9B400B0067D /* ViewController.m */; };
 		449E181C1D0837C400D47907 /* AFHTTPSessionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 449E17FB1D0837C400D47907 /* AFHTTPSessionManager.m */; };
@@ -45,6 +43,7 @@
 		449E18281D0837C400D47907 /* UIProgressView+AFNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = 449E18171D0837C400D47907 /* UIProgressView+AFNetworking.m */; };
 		449E18291D0837C400D47907 /* UIRefreshControl+AFNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = 449E18191D0837C400D47907 /* UIRefreshControl+AFNetworking.m */; };
 		449E182A1D0837C400D47907 /* UIWebView+AFNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = 449E181B1D0837C400D47907 /* UIWebView+AFNetworking.m */; };
+		44AEB9001D1B77A900C7735A /* MBProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 44AEB8FE1D1B77A900C7735A /* MBProgressHUD.m */; };
 		44B271541D1A37AD00F19A8B /* 公益.png in Resources */ = {isa = PBXBuildFile; fileRef = 44B271501D1A37AD00F19A8B /* 公益.png */; };
 		44B271551D1A37AD00F19A8B /* 微文明.png in Resources */ = {isa = PBXBuildFile; fileRef = 44B271511D1A37AD00F19A8B /* 微文明.png */; };
 		44B271561D1A37AD00F19A8B /* 文明办.png in Resources */ = {isa = PBXBuildFile; fileRef = 44B271521D1A37AD00F19A8B /* 文明办.png */; };
@@ -95,6 +94,10 @@
 		44D76BA71D0291CD00D67B5D /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 44D76BA61D0291CD00D67B5D /* AppDelegate.m */; };
 		44D76BAF1D0291CD00D67B5D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 44D76BAE1D0291CD00D67B5D /* Assets.xcassets */; };
 		44D76BB21D0291CD00D67B5D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 44D76BB01D0291CD00D67B5D /* LaunchScreen.storyboard */; };
+		44E2ED6D1D1CC4B400A0DFCD /* 返回 .png in Resources */ = {isa = PBXBuildFile; fileRef = 44E2ED6B1D1CC4B400A0DFCD /* 返回 .png */; };
+		44E2ED6E1D1CC4B400A0DFCD /* 返回 2.png in Resources */ = {isa = PBXBuildFile; fileRef = 44E2ED6C1D1CC4B400A0DFCD /* 返回 2.png */; };
+		44E8FAC91D1A9F7F001067A1 /* DetailNewsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 44E8FAC81D1A9F7F001067A1 /* DetailNewsViewController.m */; };
+		44E8FACC1D1AA577001067A1 /* MicroCivilizationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 44E8FACB1D1AA577001067A1 /* MicroCivilizationViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -102,14 +105,8 @@
 		4430E3CD1D11497B00C160B6 /* Banner.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Banner.m; sourceTree = "<group>"; };
 		4430E3CE1D11497B00C160B6 /* News.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = News.h; sourceTree = "<group>"; };
 		4430E3CF1D11497B00C160B6 /* News.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = News.m; sourceTree = "<group>"; };
-		4430E3D31D114C6C00C160B6 /* MoralsModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MoralsModel.h; sourceTree = "<group>"; };
-		4430E3D41D114C6C00C160B6 /* MoralsModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MoralsModel.m; sourceTree = "<group>"; };
-		4430E3D61D114C9000C160B6 /* MoralsModelBanner.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MoralsModelBanner.h; sourceTree = "<group>"; };
-		4430E3D71D114C9000C160B6 /* MoralsModelBanner.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MoralsModelBanner.m; sourceTree = "<group>"; };
 		4430E3DA1D114D6900C160B6 /* NewsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NewsViewController.h; sourceTree = "<group>"; };
 		4430E3DB1D114D6900C160B6 /* NewsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NewsViewController.m; sourceTree = "<group>"; };
-		4430E3DE1D114E4800C160B6 /* MaralsModelViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MaralsModelViewController.h; path = "文明嘉兴/Controller/MaralsModelViewController/MaralsModelViewController.h"; sourceTree = "<group>"; };
-		4430E3DF1D114E4800C160B6 /* MaralsModelViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MaralsModelViewController.m; path = "文明嘉兴/Controller/MaralsModelViewController/MaralsModelViewController.m"; sourceTree = "<group>"; };
 		4430E3ED1D115AB300C160B6 /* YcSegmentView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YcSegmentView.h; sourceTree = "<group>"; };
 		4430E3EE1D115AB300C160B6 /* YcSegmentView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YcSegmentView.m; sourceTree = "<group>"; };
 		44417F6A1D07BF49007E6A6E /* NewsTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NewsTableViewCell.h; sourceTree = "<group>"; };
@@ -138,6 +135,8 @@
 		446054E71D0D21E200EADD6B /* NSObject+MJProperty.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+MJProperty.m"; sourceTree = "<group>"; };
 		446054E81D0D21E200EADD6B /* NSString+MJExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+MJExtension.h"; sourceTree = "<group>"; };
 		446054E91D0D21E200EADD6B /* NSString+MJExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+MJExtension.m"; sourceTree = "<group>"; };
+		4462130E1D1C115100E58D81 /* NewsDetail.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NewsDetail.h; sourceTree = "<group>"; };
+		4462130F1D1C115100E58D81 /* NewsDetail.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NewsDetail.m; sourceTree = "<group>"; };
 		44648AFC1D07B9A600B0067D /* loadFalied.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = loadFalied.png; sourceTree = "<group>"; };
 		44648B031D07B9B400B0067D /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ViewController.h; path = "文明嘉兴/Controller/ViewController.h"; sourceTree = "<group>"; };
 		44648B041D07B9B400B0067D /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ViewController.m; path = "文明嘉兴/Controller/ViewController.m"; sourceTree = "<group>"; };
@@ -175,6 +174,8 @@
 		449E18191D0837C400D47907 /* UIRefreshControl+AFNetworking.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIRefreshControl+AFNetworking.m"; sourceTree = "<group>"; };
 		449E181A1D0837C400D47907 /* UIWebView+AFNetworking.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIWebView+AFNetworking.h"; sourceTree = "<group>"; };
 		449E181B1D0837C400D47907 /* UIWebView+AFNetworking.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIWebView+AFNetworking.m"; sourceTree = "<group>"; };
+		44AEB8FE1D1B77A900C7735A /* MBProgressHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MBProgressHUD.m; sourceTree = "<group>"; };
+		44AEB8FF1D1B77A900C7735A /* MBProgressHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MBProgressHUD.h; sourceTree = "<group>"; };
 		44B271501D1A37AD00F19A8B /* 公益.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "公益.png"; sourceTree = "<group>"; };
 		44B271511D1A37AD00F19A8B /* 微文明.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "微文明.png"; sourceTree = "<group>"; };
 		44B271521D1A37AD00F19A8B /* 文明办.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "文明办.png"; sourceTree = "<group>"; };
@@ -271,6 +272,12 @@
 		44D76BAE1D0291CD00D67B5D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		44D76BB11D0291CD00D67B5D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		44D76BB31D0291CD00D67B5D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		44E2ED6B1D1CC4B400A0DFCD /* 返回 .png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "返回 .png"; sourceTree = "<group>"; };
+		44E2ED6C1D1CC4B400A0DFCD /* 返回 2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "返回 2.png"; sourceTree = "<group>"; };
+		44E8FAC71D1A9F7F001067A1 /* DetailNewsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DetailNewsViewController.h; sourceTree = "<group>"; };
+		44E8FAC81D1A9F7F001067A1 /* DetailNewsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DetailNewsViewController.m; sourceTree = "<group>"; };
+		44E8FACA1D1AA577001067A1 /* MicroCivilizationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MicroCivilizationViewController.h; sourceTree = "<group>"; };
+		44E8FACB1D1AA577001067A1 /* MicroCivilizationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MicroCivilizationViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -284,28 +291,18 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		4430E3CB1D11497B00C160B6 /* wenmingbobao */ = {
+		4430E3CB1D11497B00C160B6 /* NEWS */ = {
 			isa = PBXGroup;
 			children = (
 				4430E3CC1D11497B00C160B6 /* Banner.h */,
 				4430E3CD1D11497B00C160B6 /* Banner.m */,
 				4430E3CE1D11497B00C160B6 /* News.h */,
 				4430E3CF1D11497B00C160B6 /* News.m */,
+				4462130E1D1C115100E58D81 /* NewsDetail.h */,
+				4462130F1D1C115100E58D81 /* NewsDetail.m */,
 			);
-			name = wenmingbobao;
+			name = NEWS;
 			path = "文明嘉兴/Model/wenmingbobao";
-			sourceTree = "<group>";
-		};
-		4430E3D21D114BF300C160B6 /* daodemofan */ = {
-			isa = PBXGroup;
-			children = (
-				4430E3D31D114C6C00C160B6 /* MoralsModel.h */,
-				4430E3D41D114C6C00C160B6 /* MoralsModel.m */,
-				4430E3D61D114C9000C160B6 /* MoralsModelBanner.h */,
-				4430E3D71D114C9000C160B6 /* MoralsModelBanner.m */,
-			);
-			name = daodemofan;
-			path = "文明嘉兴/Model/daodemofan";
 			sourceTree = "<group>";
 		};
 		4430E3D91D114D6900C160B6 /* NewsViewController */ = {
@@ -316,15 +313,6 @@
 			);
 			name = NewsViewController;
 			path = "文明嘉兴/Controller/NewsViewController";
-			sourceTree = "<group>";
-		};
-		4430E3DD1D114D7300C160B6 /* MaralsModelViewController */ = {
-			isa = PBXGroup;
-			children = (
-				4430E3DE1D114E4800C160B6 /* MaralsModelViewController.h */,
-				4430E3DF1D114E4800C160B6 /* MaralsModelViewController.m */,
-			);
-			name = MaralsModelViewController;
 			sourceTree = "<group>";
 		};
 		4430E3EC1D115AB300C160B6 /* YCSegmentViewController */ = {
@@ -379,8 +367,7 @@
 		44648A0B1D07B7D700B0067D /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				4430E3D21D114BF300C160B6 /* daodemofan */,
-				4430E3CB1D11497B00C160B6 /* wenmingbobao */,
+				4430E3CB1D11497B00C160B6 /* NEWS */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -388,10 +375,10 @@
 		44648A0C1D07B7EE00B0067D /* View */ = {
 			isa = PBXGroup;
 			children = (
+				44648AFB1D07B9A600B0067D /* defaultPicture */,
 				44B2714F1D1A37AD00F19A8B /* ItemPIcture */,
 				44417F6F1D07BF66007E6A6E /* Main.storyboard */,
 				44417F691D07BF49007E6A6E /* NewsTableViewCell */,
-				44648AFB1D07B9A600B0067D /* defaultPicture */,
 			);
 			name = View;
 			sourceTree = "<group>";
@@ -399,11 +386,11 @@
 		44648A0D1D07B80500B0067D /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				44E8FAC61D1A9F5F001067A1 /* DetailNewsViewController */,
 				44B271591D1A393800F19A8B /* TableBarItemController */,
 				44648B031D07B9B400B0067D /* ViewController.h */,
 				44648B041D07B9B400B0067D /* ViewController.m */,
 				4430E3D91D114D6900C160B6 /* NewsViewController */,
-				4430E3DD1D114D7300C160B6 /* MaralsModelViewController */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -466,9 +453,21 @@
 			path = "文明嘉兴/Framework/UIKit+AFNetworking";
 			sourceTree = "<group>";
 		};
+		44AEB8FD1D1B77A900C7735A /* MBProgressHUD */ = {
+			isa = PBXGroup;
+			children = (
+				44AEB8FE1D1B77A900C7735A /* MBProgressHUD.m */,
+				44AEB8FF1D1B77A900C7735A /* MBProgressHUD.h */,
+			);
+			name = MBProgressHUD;
+			path = "文明嘉兴/Framework/MBProgressHUD";
+			sourceTree = "<group>";
+		};
 		44B2714F1D1A37AD00F19A8B /* ItemPIcture */ = {
 			isa = PBXGroup;
 			children = (
+				44E2ED6B1D1CC4B400A0DFCD /* 返回 .png */,
+				44E2ED6C1D1CC4B400A0DFCD /* 返回 2.png */,
 				44B271501D1A37AD00F19A8B /* 公益.png */,
 				44B271511D1A37AD00F19A8B /* 微文明.png */,
 				44B271521D1A37AD00F19A8B /* 文明办.png */,
@@ -482,7 +481,7 @@
 			isa = PBXGroup;
 			children = (
 				44B2715A1D1A39B700F19A8B /* gongyi */,
-				44B2715B1D1A39B700F19A8B /* weiwenming */,
+				44B2715B1D1A39B700F19A8B /* MicroCivilization */,
 				44B2715C1D1A39B700F19A8B /* wenmingban */,
 			);
 			name = TableBarItemController;
@@ -496,10 +495,13 @@
 			path = gongyi;
 			sourceTree = "<group>";
 		};
-		44B2715B1D1A39B700F19A8B /* weiwenming */ = {
+		44B2715B1D1A39B700F19A8B /* MicroCivilization */ = {
 			isa = PBXGroup;
 			children = (
+				44E8FACA1D1AA577001067A1 /* MicroCivilizationViewController.h */,
+				44E8FACB1D1AA577001067A1 /* MicroCivilizationViewController.m */,
 			);
+			name = MicroCivilization;
 			path = weiwenming;
 			sourceTree = "<group>";
 		};
@@ -513,6 +515,7 @@
 		44CC71B11D07F13500048A7D /* Framework */ = {
 			isa = PBXGroup;
 			children = (
+				44AEB8FD1D1B77A900C7735A /* MBProgressHUD */,
 				4430E3EC1D115AB300C160B6 /* YCSegmentViewController */,
 				446054D31D0D21E200EADD6B /* MJExtension */,
 				449E17F91D0837C400D47907 /* AFNetworking */,
@@ -730,6 +733,16 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		44E8FAC61D1A9F5F001067A1 /* DetailNewsViewController */ = {
+			isa = PBXGroup;
+			children = (
+				44E8FAC71D1A9F7F001067A1 /* DetailNewsViewController.h */,
+				44E8FAC81D1A9F7F001067A1 /* DetailNewsViewController.m */,
+			);
+			name = DetailNewsViewController;
+			path = "文明嘉兴/Controller/DetailNewsViewController";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -787,6 +800,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				44E2ED6D1D1CC4B400A0DFCD /* 返回 .png in Resources */,
 				44417F701D07BF66007E6A6E /* Main.storyboard in Resources */,
 				44B271571D1A37AD00F19A8B /* 要闻.png in Resources */,
 				44B271561D1A37AD00F19A8B /* 文明办.png in Resources */,
@@ -796,6 +810,7 @@
 				44D76BAF1D0291CD00D67B5D /* Assets.xcassets in Resources */,
 				44417F6E1D07BF49007E6A6E /* NewsTableViewCell.xib in Resources */,
 				44648B001D07B9A600B0067D /* loadFalied.png in Resources */,
+				44E2ED6E1D1CC4B400A0DFCD /* 返回 2.png in Resources */,
 				446054EA1D0D21E200EADD6B /* Info.plist in Resources */,
 				44B271541D1A37AD00F19A8B /* 公益.png in Resources */,
 			);
@@ -808,12 +823,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				44E8FAC91D1A9F7F001067A1 /* DetailNewsViewController.m in Sources */,
 				446054F11D0D21E200EADD6B /* NSObject+MJCoding.m in Sources */,
 				446054F21D0D21E200EADD6B /* NSObject+MJKeyValue.m in Sources */,
 				44CC72581D07F1E200048A7D /* SDWebImageDecoder.m in Sources */,
 				44CC725B1D07F1E200048A7D /* SDWebImageManager.m in Sources */,
 				449E18291D0837C400D47907 /* UIRefreshControl+AFNetworking.m in Sources */,
-				4430E3D81D114C9000C160B6 /* MoralsModelBanner.m in Sources */,
 				44CC724A1D07F1E200048A7D /* UIScrollView+MJExtension.m in Sources */,
 				44CC724D1D07F1E200048A7D /* TAAbstractDotView.m in Sources */,
 				449E18241D0837C400D47907 /* AFNetworkActivityIndicatorManager.m in Sources */,
@@ -841,12 +856,13 @@
 				449E182A1D0837C400D47907 /* UIWebView+AFNetworking.m in Sources */,
 				449E18221D0837C400D47907 /* AFAutoPurgingImageCache.m in Sources */,
 				44648B051D07B9B400B0067D /* ViewController.m in Sources */,
-				4430E3E01D114E4800C160B6 /* MaralsModelViewController.m in Sources */,
 				446054EF1D0D21E200EADD6B /* MJPropertyType.m in Sources */,
 				449E181E1D0837C400D47907 /* AFSecurityPolicy.m in Sources */,
 				44CC725E1D07F1E200048A7D /* UIImage+GIF.m in Sources */,
 				449E181D1D0837C400D47907 /* AFNetworkReachabilityManager.m in Sources */,
+				44AEB9001D1B77A900C7735A /* MBProgressHUD.m in Sources */,
 				44CC72571D07F1E200048A7D /* SDWebImageCompat.m in Sources */,
+				44E8FACC1D1AA577001067A1 /* MicroCivilizationViewController.m in Sources */,
 				449E18261D0837C400D47907 /* UIButton+AFNetworking.m in Sources */,
 				44CC724C1D07F1E200048A7D /* UIView+MJExtension.m in Sources */,
 				44CC72501D07F1E200048A7D /* TAPageControl.m in Sources */,
@@ -858,9 +874,9 @@
 				446054F01D0D21E200EADD6B /* NSObject+MJClass.m in Sources */,
 				44CC72511D07F1E200048A7D /* SDCollectionViewCell.m in Sources */,
 				449E18271D0837C400D47907 /* UIImageView+AFNetworking.m in Sources */,
+				446213101D1C115100E58D81 /* NewsDetail.m in Sources */,
 				44CC724E1D07F1E200048A7D /* TAAnimatedDotView.m in Sources */,
 				4430E3D11D11497B00C160B6 /* News.m in Sources */,
-				4430E3D51D114C6C00C160B6 /* MoralsModel.m in Sources */,
 				44CC72441D07F1E200048A7D /* MJRefreshBackStateFooter.m in Sources */,
 				4430E3D01D11497B00C160B6 /* Banner.m in Sources */,
 				449E181C1D0837C400D47907 /* AFHTTPSessionManager.m in Sources */,

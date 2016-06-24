@@ -21,7 +21,13 @@
 @property(copy,nonatomic)NSString*image;
 @property(assign,nonatomic)NSNumber*praiseNum;
 @property(assign,nonatomic)NSNumber*browseNum;
+
+
 @property(copy,nonatomic)NSString*issuestime;
+@property(strong,nonatomic)NSString*content;
+@property(strong,nonatomic)NSString*link;
+@property(strong,nonatomic)NSString*updatetime;
+@property(strong,nonatomic)NSString*categoryFK;
 
 @property (nonatomic,strong) AFHTTPSessionManager * manager;
 

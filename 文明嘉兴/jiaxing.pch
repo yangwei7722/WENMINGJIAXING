@@ -11,21 +11,29 @@
 
 #import "News.h"
 #import "Banner.h"
+#import "NewsDetail.h"
 #import "NewsTableViewCell.h"
 #import "AFNetworking.h"
 #import "UIKit+AFNetworking.h"
 #import "SDCycleScrollView.h"
 #import "MJRefresh.h"
 #import "MJExtension.h"
+#import "MBProgressHUD.h"
 
 
 
 #define GetNewsDataNotification @"getDataNotification"
 #define GetBannerDataNotification @"getBanner"
 
+#define SCREEN_BOUNDS [UIScreen mainScreen].bounds
+
+
 #define HTTP_HOST @"http://jxwm.gkmm.net:8989/news/"
 #define HTTP_NEWS @"news/getNewsByCategoryId.do"
 #define HTTP_BANNER @"newsCategory/getBanner.do"
+
+#define HTTP_DETAIL_NEWS [HTTP_HOST stringByAppendingFormat:@"news/getNewsDetailById.do"]
+
 // Include any system framework and library headers here that should be included in all compilation units.
 // You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
 

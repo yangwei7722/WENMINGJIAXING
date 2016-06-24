@@ -8,10 +8,15 @@
 
 #import "NewsViewController.h"
 
+
+
 @interface NewsViewController ()<UITableViewDelegate,UITableViewDataSource,SDCycleScrollViewDelegate>
 {
 
     int pageNum;
+    
+    NSDictionary*dict;
+  
 }
 
 
@@ -31,11 +36,10 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    pageNum=0;
-    
     // Do any additional setup after loading the view, typically from a nib.
     
     
+     pageNum=0;
 
     
     
@@ -54,8 +58,7 @@
     
     [[NSNotificationCenter defaultCenter]addObserver:self selector:@selector(handeleBannerByNotification:) name:GetBannerDataNotification object:nil];
     
-  //先让tableView去刷新数据
-    [News getDataWithPageNum:pageNum];
+
     
     //下拉刷新
     self.tableView.mj_header=[MJRefreshNormalHeader headerWithRefreshingBlock:^{
@@ -83,7 +86,10 @@
     
     [self.tableView.mj_footer beginRefreshing];
     
-    
+    //先让tableView去刷新数据
+    [News getDataWithPageNum:pageNum];
+  //  [self.tableView reloadData];
+   
 }
 
 
@@ -212,14 +218,41 @@
 
 
 -(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
-
-    NSLog(@"选中：%@行",indexPath);
-    UIViewController*vc=[[UIViewController alloc]init];
-    vc.view.backgroundColor=[UIColor greenColor];
-    [self.navigationController addChildViewController:vc];
+ 
+    News*news=self.newsArray[indexPath.row];
     
-    [self.navigationController pushViewController:vc animated:YES];
+    
+    //网络文档公式？会导致新闻详情错乱
+    //int  tempNum=(pageNum-1)*10+(int)indexPath.row;
+
+//这里注意单词错误将会导后面的网络请求失败
+    dict= @{
+                           @"newsId":news.newsId,
+                           @"categoryFk":@1,
+                           @"pageNum":@(indexPath.row)
+                           
+                           };
+        //跳转传值
+     [self performSegueWithIdentifier:@"detail" sender:self];
 }
+
+
+//线传值
+-(void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender{
+   
+    if ([segue.identifier isEqualToString:@"detail"]) {
+        
+        id send=segue.destinationViewController;
+        
+        [send setValue:dict forKey:@"parameter"];
+    }
+  
+    
+
+
+}
+
+
 
 
 
