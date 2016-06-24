@@ -18,7 +18,7 @@
 
 @property (weak, nonatomic) IBOutlet UILabel *praise;
 
-@property (weak, nonatomic) IBOutlet UILabel *comment;
+@property (weak, nonatomic) IBOutlet UILabel *commit;
 
 
 @end

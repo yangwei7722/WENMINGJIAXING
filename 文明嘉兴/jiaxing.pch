@@ -25,6 +25,8 @@
 #define GetNewsDataNotification @"getDataNotification"
 #define GetBannerDataNotification @"getBanner"
 
+#define GetDetailNewsNotification @"getDetailNews"
+
 #define SCREEN_BOUNDS [UIScreen mainScreen].bounds
 
 

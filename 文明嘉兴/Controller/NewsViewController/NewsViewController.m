@@ -202,8 +202,8 @@
     cell.newsMessage.text=news.title;
     
     cell.dateTime.text=news.issuestime;
-    cell.praise.text=[NSString stringWithFormat:@"%@",news.praiseNum];
-    cell.comment.text=[NSString stringWithFormat:@"%@",news.browseNum];
+    cell.praise.text=[@"评论:" stringByAppendingFormat:@"%@",news.praiseNum];
+    cell.commit.text=[@"赞:" stringByAppendingFormat:@"%@",news.browseNum];
     
     
     return cell;

@@ -29,6 +29,9 @@
 @property(strong,nonatomic)UIView*lgView;
 
 
+@property (weak, nonatomic) IBOutlet NSLayoutConstraint *webViewHeight;
+
+
 
 
 @end
@@ -60,13 +63,14 @@
     
     //获取HTML内容的高度
     CGFloat height = [[webView stringByEvaluatingJavaScriptFromString:@"document.body.offsetHeight"] floatValue];
+    
     CGRect frame = webView.frame;
     frame.size.height = height+10;
     
     self.webView.frame = frame;
     
     //修改托线约束，因为高度不固定，故托线后进行修改
- //   self.webViewHeght.constant = frame.origin.y+height+10;
+    self.webViewHeight.constant = frame.origin.y+height+10;
     
     //设置滚动视图的ContentSize
     self.scrollView.contentSize = CGSizeMake(320, frame.origin.y+height+10);
@@ -80,20 +84,22 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     
+    self.view.backgroundColor=[UIColor whiteColor];
+    
    // NSLog(@"----%@",_parameter);
     
     
     
     self.webView.delegate =self;
     
-   // self.webView.userInteractionEnabled = NO;
+    self.webView.userInteractionEnabled = NO;
     
     
     
     [NewsDetail getDataWithDict:self.parameter];
   
     //发送通知去请求数据
-    [[NSNotificationCenter defaultCenter]addObserver:self selector:@selector(handleNewsByNotification:) name:GetNewsDataNotification object:nil];
+    [[NSNotificationCenter defaultCenter]addObserver:self selector:@selector(handleNewsByNotification:) name:GetDetailNewsNotification object:nil];
     
 }
 

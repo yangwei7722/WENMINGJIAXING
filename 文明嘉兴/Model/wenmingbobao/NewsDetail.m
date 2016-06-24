@@ -42,7 +42,7 @@
             
             NewsDetail*news=[NewsDetail mj_objectWithKeyValues:data];
             
-            [[NSNotificationCenter defaultCenter]postNotificationName:GetNewsDataNotification object:news];
+            [[NSNotificationCenter defaultCenter]postNotificationName:GetDetailNewsNotification object:news];
             
         }
         
