@@ -11,7 +11,7 @@
 @implementation News
 
 
-+(void)getDataWithPageNum:(int)pageNum{
++(void)getDataWithPageNum:(NSInteger )pageNum{
     
     
     [[[self class]alloc]getDataWithPageNum:pageNum];
@@ -21,7 +21,7 @@
 
 
 
--(void)getDataWithPageNum:(int)pageNum{
+-(void)getDataWithPageNum:(NSInteger )pageNum{
    
    
     NSDictionary*dict=@{
@@ -38,7 +38,7 @@
     //post请求
     [self.manager POST:[HTTP_HOST stringByAppendingString:HTTP_NEWS] parameters:dict progress:nil success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
         if ([responseObject[@"result"] isEqualToNumber:@0]) {
-            
+           
             
             NSArray*tempArray=responseObject[@"data"];
             
@@ -80,7 +80,8 @@
     }
     
     _manager=[AFHTTPSessionManager manager];
-    
+ 
+    //请求时使用JSON数据序列化
     _manager.requestSerializer=[AFJSONRequestSerializer serializer];
     
     

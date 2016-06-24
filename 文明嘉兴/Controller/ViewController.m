@@ -32,7 +32,7 @@
     NSArray*titleArray=@[@"文明播报",@"道德模范",@"文明创建",@"志愿服务",@"未成年人",@"区县传真",@"主题活动",@"我们的节日"];
    
     
-    NSArray*viewControllerArray=@[@"NewsViewController",@"NewsViewController",@"NewsViewController",@"NewsViewController",@"NewsViewController",@"NewsViewController",@"NewsViewController",@"NewsViewController"];
+    NSArray*viewControllerArray=@[@"NewsViewController"];
     
     
     YcSegmentView*segmentView=[[YcSegmentView alloc]initWithFrame:CGRectMake(0, 20, SCREENW, SCREENH) andHeaderHeight:30 andTitleArray:titleArray andShowControllerNameArray:viewControllerArray];

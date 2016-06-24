@@ -13,7 +13,7 @@
 @interface NewsViewController ()<UITableViewDelegate,UITableViewDataSource,SDCycleScrollViewDelegate>
 {
 
-    int pageNum;
+    NSInteger pageNum;
     
     NSDictionary*dict;
   
@@ -39,8 +39,7 @@
     // Do any additional setup after loading the view, typically from a nib.
     
     
-     pageNum=0;
-
+    
     
     
     _tableView.delegate=self;
@@ -71,8 +70,7 @@
         
     }];
     
-    //默认请求数据并刷新
-    [self.tableView.mj_header beginRefreshing];
+    
     
     //上拉刷新
     self.tableView.mj_footer=[MJRefreshAutoNormalFooter footerWithRefreshingBlock:^{
@@ -83,11 +81,13 @@
         
         
     }];
-    
-    [self.tableView.mj_footer beginRefreshing];
+    //默认请求数据并刷新
+    [self.tableView.mj_header beginRefreshing];
+//    [self.tableView.mj_footer beginRefreshing];
     
     //先让tableView去刷新数据
-    [News getDataWithPageNum:pageNum];
+//    [News getDataWithPageNum:pageNum];
+//    [self.tableView.mj_header beginRefreshing];
   //  [self.tableView reloadData];
    
 }
@@ -166,7 +166,7 @@
 -(void)dealloc{
     
     
-    [[NSNotificationCenter defaultCenter] removeObserver:self name:GetNewsDataNotification object:nil];
+    [[NSNotificationCenter defaultCenter] removeObserver:self name:GetDetailNewsNotification object:nil];
     
     [[NSNotificationCenter defaultCenter]removeObserver:self];
     
@@ -203,7 +203,7 @@
     
     cell.dateTime.text=news.issuestime;
     cell.praise.text=[@"评论:" stringByAppendingFormat:@"%@",news.praiseNum];
-    cell.commit.text=[@"赞:" stringByAppendingFormat:@"%@",news.browseNum];
+    cell.commit.text=[@"赞:" stringByAppendingFormat:@"%@%ld",news.browseNum,indexPath.row];
     
     
     return cell;
@@ -218,15 +218,13 @@
 
 
 -(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
- 
+
+    
     News*news=self.newsArray[indexPath.row];
     
-    
-    //网络文档公式？会导致新闻详情错乱
-    //int  tempNum=(pageNum-1)*10+(int)indexPath.row;
 
 //这里注意单词错误将会导后面的网络请求失败
-    dict= @{
+                 dict= @{
                            @"newsId":news.newsId,
                            @"categoryFk":@1,
                            @"pageNum":@(indexPath.row)

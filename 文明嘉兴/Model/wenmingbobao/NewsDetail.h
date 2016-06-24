@@ -25,8 +25,8 @@
 @property(strong,nonatomic)NSDictionary*detailDict;
 @property(strong,nonatomic)NSMutableSet*mutableSet;
 
-+(void)getDataWithDict:(NSDictionary*)parameter;
++(void)getDataWithDict:(NSDictionary *)parameter;
 
--(void)getDataWithDict:(NSDictionary*)parameter;
+-(void)getDataWithDict:(NSDictionary *)parameter;
 
 @end

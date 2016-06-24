@@ -12,7 +12,6 @@
 @interface DetailNewsViewController ()<UIWebViewDelegate>
 
 
-
 @property (weak, nonatomic) IBOutlet UILabel *bannerLable;
 
 @property (weak, nonatomic) IBOutlet UILabel *deatalTime;
@@ -86,7 +85,7 @@
     
     self.view.backgroundColor=[UIColor whiteColor];
     
-   // NSLog(@"----%@",_parameter);
+    NSLog(@"----%@",_parameter);
     
     
     

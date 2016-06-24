@@ -36,7 +36,7 @@
         
         if ([responseObject[@"result"] isEqualToNumber:@0]) {
             
-            NSLog(@"---------->");
+           
             
             NSDictionary*data=responseObject[@"data"];
             
