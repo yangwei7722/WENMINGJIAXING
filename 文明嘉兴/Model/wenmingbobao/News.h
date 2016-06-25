@@ -33,9 +33,9 @@
 
 
 
-+(void)getDataWithPageNum:(NSInteger)pageNum;
++(void)getDataWithPageNum:(NSInteger )pageNum withCategoryId:(NSInteger)categoryId;
 
--(void)getDataWithPageNum:(NSInteger)pageNum;
+-(void)getDataWithPageNum:(NSInteger )pageNum withCategoryId:(NSInteger)categoryId;
 
 
 

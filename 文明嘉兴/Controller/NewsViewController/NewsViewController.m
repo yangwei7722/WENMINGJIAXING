@@ -11,13 +11,7 @@
 
 
 @interface NewsViewController ()<UITableViewDelegate,UITableViewDataSource,SDCycleScrollViewDelegate>
-{
 
-    NSInteger pageNum;
-    
-    NSDictionary*dict;
-  
-}
 
 
 @property (weak, nonatomic) IBOutlet UITableView *tableView;
@@ -26,6 +20,11 @@
 @property(strong,nonatomic)UIRefreshControl*refresh;            //上下拉刷新
 @property(strong,nonatomic)NSArray*bannerArray;
 @property(strong,nonatomic)AFHTTPSessionManager*manager;        //网络请求
+
+@property(assign,nonatomic)NSInteger pageNum;
+
+@property(strong,nonatomic)NSDictionary*dict;
+@property(assign,nonatomic)NSInteger categoryId;
 
 
 @end
@@ -38,59 +37,13 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
     
+    [self refreshData];
     
-    
-    
-    
-    _tableView.delegate=self;
-    _tableView.dataSource=self;
+ 
 
-    
-    //注册tableViewCell
-    [_tableView registerClass:[NewsTableViewCell class] forCellReuseIdentifier:@"cell"];
-    
-    _tableView.showsVerticalScrollIndicator=NO;
-   
-      //添加通知当取得数据就进行通知
-    [[NSNotificationCenter defaultCenter]addObserver:self selector:@selector(handleNewsByNotification:) name:GetNewsDataNotification object:nil];
-    
-    
-    [[NSNotificationCenter defaultCenter]addObserver:self selector:@selector(handeleBannerByNotification:) name:GetBannerDataNotification object:nil];
-    
-
-    
-    //下拉刷新
-    self.tableView.mj_header=[MJRefreshNormalHeader headerWithRefreshingBlock:^{
-        
-        pageNum=1;
-        
-        [Banner getBannerData];
-        
-        [News getDataWithPageNum:pageNum];
-        
-    }];
-    
-    
-    
-    //上拉刷新
-    self.tableView.mj_footer=[MJRefreshAutoNormalFooter footerWithRefreshingBlock:^{
-        
-        //每向上拖一次让页码加一次
-        
-        [News getDataWithPageNum:++pageNum];
-        
-        
-    }];
-    //默认请求数据并刷新
-    [self.tableView.mj_header beginRefreshing];
-//    [self.tableView.mj_footer beginRefreshing];
-    
-    //先让tableView去刷新数据
-//    [News getDataWithPageNum:pageNum];
-//    [self.tableView.mj_header beginRefreshing];
-  //  [self.tableView reloadData];
    
 }
+
 
 
 
@@ -99,7 +52,7 @@
     
     
     //判断是否第一页
-    if (pageNum == 1) {
+    if (_pageNum == 1) {
         self.newsArray = [NSMutableArray array];
     }
     //判断这个object是不是数组
@@ -127,6 +80,7 @@
     
     //   NSLog(@"%@",self.bannerArray);
     NSMutableArray*imageArray=[NSMutableArray array];
+    
     NSMutableArray*titleArray=[NSMutableArray array];
     for (int i=0; i<5; i++) {
         News*news=self.bannerArray[i];
@@ -172,6 +126,63 @@
     
     
 }
+
+
+
+
+//刷新数据
+
+-(void)refreshData{
+    _categoryId=1;
+    
+    
+    _tableView.delegate=self;
+    _tableView.dataSource=self;
+    
+    
+    //注册tableViewCell
+    [_tableView registerClass:[NewsTableViewCell class] forCellReuseIdentifier:@"cell"];
+    
+    _tableView.showsVerticalScrollIndicator=NO;
+    
+    //添加通知当取得数据就进行通知
+    [[NSNotificationCenter defaultCenter]addObserver:self selector:@selector(handleNewsByNotification:) name:GetNewsDataNotification object:nil];
+    
+    
+    [[NSNotificationCenter defaultCenter]addObserver:self selector:@selector(handeleBannerByNotification:) name:GetBannerDataNotification object:nil];
+    
+    
+    
+    //下拉刷新
+    self.tableView.mj_header=[MJRefreshNormalHeader headerWithRefreshingBlock:^{
+        
+        _pageNum=1;
+        
+        [Banner getBannerData];
+        
+        [News getDataWithPageNum:_pageNum withCategoryId:self.categoryId];
+        
+    }];
+    
+    
+    
+    //上拉刷新
+    self.tableView.mj_footer=[MJRefreshAutoNormalFooter footerWithRefreshingBlock:^{
+        
+        //每向上拖一次让页码加一次
+        
+        [News getDataWithPageNum:++_pageNum withCategoryId:self.categoryId];
+        
+        
+    }];
+    //默认请求数据并刷新
+    [self.tableView.mj_header beginRefreshing];
+    //    [self.tableView.mj_footer beginRefreshing];
+    
+    
+}
+
+
 
 
 //设置行数
@@ -222,16 +233,19 @@
     
     News*news=self.newsArray[indexPath.row];
     
-
-//这里注意单词错误将会导后面的网络请求失败
-                 dict= @{
+NSInteger tempNum=(_pageNum-1)*10+(NSInteger)indexPath.row;
+    
+    NSInteger detailPageNum=self.categoryId;
+    
+    //这里注意单词错误将会导后面的网络请求失败
+                 _dict= @{
                            @"newsId":news.newsId,
-                           @"categoryFk":@1,
-                           @"pageNum":@(indexPath.row)
+                           @"categoryFk":@(detailPageNum),
+                           @"pageNum":@(tempNum)
                            
                            };
         //跳转传值
-     [self performSegueWithIdentifier:@"detail" sender:self];
+     [self performSegueWithIdentifier:@"detail" sender:_dict];
 }
 
 
@@ -242,7 +256,7 @@
         
         id send=segue.destinationViewController;
         
-        [send setValue:dict forKey:@"parameter"];
+        [send setValue:sender forKey:@"parameter"];
     }
   
     
@@ -250,7 +264,18 @@
 
 }
 
+-(void)setCategoryId:(NSInteger)categoryId{
+   
 
+    _categoryId=categoryId;
+    
+    NSLog(@"%ld",_categoryId);
+    
+    [self.tableView.mj_header beginRefreshing];
+
+
+
+}
 
 
 

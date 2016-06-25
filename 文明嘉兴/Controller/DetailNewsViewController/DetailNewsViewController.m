@@ -37,6 +37,7 @@
 
 @implementation DetailNewsViewController
 
+
 - (void)webViewDidFinishLoad:(UIWebView *)webView
 {
     //拦截网页中的图片  并修改图片大小
@@ -83,34 +84,32 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     
-    self.view.backgroundColor=[UIColor whiteColor];
+   
     
     NSLog(@"----%@",_parameter);
     
     
     
-    self.webView.delegate =self;
-    
-    self.webView.userInteractionEnabled = NO;
-    
-    
-    
-    [NewsDetail getDataWithDict:self.parameter];
+    [self registeredNSNotificationCenter];
   
-    //发送通知去请求数据
-    [[NSNotificationCenter defaultCenter]addObserver:self selector:@selector(handleNewsByNotification:) name:GetDetailNewsNotification object:nil];
+    
     
 }
 
-//-(void)registeredNSNotificationCenter{
-//
-//
-//
-//
-//}
+-(void)registeredNSNotificationCenter{
+    
+   self.webView.delegate =self;
+    
+    self.webView.userInteractionEnabled = NO;
+
+//发送通知去请求数据
+    [[NSNotificationCenter defaultCenter]addObserver:self selector:@selector(handleNewsByNotification:) name:GetDetailNewsNotification object:nil];
+ [NewsDetail getDataWithDict:self.parameter];
+
+}
 
 
-
+//通知中心的回调方法并刷新数据
 -(void)handleNewsByNotification:(NSNotification*)notification{
 
 
@@ -129,7 +128,7 @@
 }
 
 
-
+//移除通知中心
 -(void)dealloc{
     
     [[NSNotificationCenter defaultCenter]removeObserver:self name:GetNewsDataNotification object:nil];

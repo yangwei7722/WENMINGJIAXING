@@ -10,7 +10,6 @@
 
 @interface NewsViewController : UIViewController
 
-
-
+-(void)setCategoryId:(NSInteger)categoryId;
 
 @end

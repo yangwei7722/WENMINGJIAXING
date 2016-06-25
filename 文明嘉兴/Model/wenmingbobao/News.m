@@ -11,22 +11,22 @@
 @implementation News
 
 
-+(void)getDataWithPageNum:(NSInteger )pageNum{
++(void)getDataWithPageNum:(NSInteger )pageNum withCategoryId:(NSInteger)categoryId{
     
     
-    [[[self class]alloc]getDataWithPageNum:pageNum];
+    [[[self class]alloc]getDataWithPageNum:pageNum withCategoryId:categoryId];
     
     
 }
 
 
 
--(void)getDataWithPageNum:(NSInteger )pageNum{
+-(void)getDataWithPageNum:(NSInteger )pageNum withCategoryId:(NSInteger)categoryId{
    
    
     NSDictionary*dict=@{
                         
-                        @"categoryId":@1,
+                        @"categoryId":@(categoryId),
                         @"pageNum":@(pageNum)
                         
                         };

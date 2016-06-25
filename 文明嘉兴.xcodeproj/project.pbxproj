@@ -10,7 +10,6 @@
 		4430E3D01D11497B00C160B6 /* Banner.m in Sources */ = {isa = PBXBuildFile; fileRef = 4430E3CD1D11497B00C160B6 /* Banner.m */; };
 		4430E3D11D11497B00C160B6 /* News.m in Sources */ = {isa = PBXBuildFile; fileRef = 4430E3CF1D11497B00C160B6 /* News.m */; };
 		4430E3DC1D114D6900C160B6 /* NewsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4430E3DB1D114D6900C160B6 /* NewsViewController.m */; };
-		4430E3EF1D115AB300C160B6 /* YcSegmentView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4430E3EE1D115AB300C160B6 /* YcSegmentView.m */; };
 		44417F6D1D07BF49007E6A6E /* NewsTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 44417F6B1D07BF49007E6A6E /* NewsTableViewCell.m */; };
 		44417F6E1D07BF49007E6A6E /* NewsTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 44417F6C1D07BF49007E6A6E /* NewsTableViewCell.xib */; };
 		44417F701D07BF66007E6A6E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 44417F6F1D07BF66007E6A6E /* Main.storyboard */; };
@@ -28,6 +27,8 @@
 		446213101D1C115100E58D81 /* NewsDetail.m in Sources */ = {isa = PBXBuildFile; fileRef = 4462130F1D1C115100E58D81 /* NewsDetail.m */; };
 		44648B001D07B9A600B0067D /* loadFalied.png in Resources */ = {isa = PBXBuildFile; fileRef = 44648AFC1D07B9A600B0067D /* loadFalied.png */; };
 		44648B051D07B9B400B0067D /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 44648B041D07B9B400B0067D /* ViewController.m */; };
+		448445AD1D1E405900E79476 /* YSLContainerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 448445AA1D1E405900E79476 /* YSLContainerViewController.m */; };
+		448445AE1D1E405900E79476 /* YSLScrollMenuView.m in Sources */ = {isa = PBXBuildFile; fileRef = 448445AC1D1E405900E79476 /* YSLScrollMenuView.m */; };
 		449E181C1D0837C400D47907 /* AFHTTPSessionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 449E17FB1D0837C400D47907 /* AFHTTPSessionManager.m */; };
 		449E181D1D0837C400D47907 /* AFNetworkReachabilityManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 449E17FD1D0837C400D47907 /* AFNetworkReachabilityManager.m */; };
 		449E181E1D0837C400D47907 /* AFSecurityPolicy.m in Sources */ = {isa = PBXBuildFile; fileRef = 449E18001D0837C400D47907 /* AFSecurityPolicy.m */; };
@@ -107,8 +108,6 @@
 		4430E3CF1D11497B00C160B6 /* News.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = News.m; sourceTree = "<group>"; };
 		4430E3DA1D114D6900C160B6 /* NewsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NewsViewController.h; sourceTree = "<group>"; };
 		4430E3DB1D114D6900C160B6 /* NewsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NewsViewController.m; sourceTree = "<group>"; };
-		4430E3ED1D115AB300C160B6 /* YcSegmentView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YcSegmentView.h; sourceTree = "<group>"; };
-		4430E3EE1D115AB300C160B6 /* YcSegmentView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YcSegmentView.m; sourceTree = "<group>"; };
 		44417F6A1D07BF49007E6A6E /* NewsTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NewsTableViewCell.h; sourceTree = "<group>"; };
 		44417F6B1D07BF49007E6A6E /* NewsTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NewsTableViewCell.m; sourceTree = "<group>"; };
 		44417F6C1D07BF49007E6A6E /* NewsTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NewsTableViewCell.xib; sourceTree = "<group>"; };
@@ -141,6 +140,10 @@
 		44648B031D07B9B400B0067D /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ViewController.h; path = "文明嘉兴/Controller/ViewController.h"; sourceTree = "<group>"; };
 		44648B041D07B9B400B0067D /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ViewController.m; path = "文明嘉兴/Controller/ViewController.m"; sourceTree = "<group>"; };
 		4465E39E1D056BC000D039F3 /* jiaxing.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = jiaxing.pch; sourceTree = "<group>"; };
+		448445A91D1E405900E79476 /* YSLContainerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YSLContainerViewController.h; sourceTree = "<group>"; };
+		448445AA1D1E405900E79476 /* YSLContainerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YSLContainerViewController.m; sourceTree = "<group>"; };
+		448445AB1D1E405900E79476 /* YSLScrollMenuView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YSLScrollMenuView.h; sourceTree = "<group>"; };
+		448445AC1D1E405900E79476 /* YSLScrollMenuView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YSLScrollMenuView.m; sourceTree = "<group>"; };
 		449E17FA1D0837C400D47907 /* AFHTTPSessionManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFHTTPSessionManager.h; sourceTree = "<group>"; };
 		449E17FB1D0837C400D47907 /* AFHTTPSessionManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFHTTPSessionManager.m; sourceTree = "<group>"; };
 		449E17FC1D0837C400D47907 /* AFNetworkReachabilityManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFNetworkReachabilityManager.h; sourceTree = "<group>"; };
@@ -315,15 +318,6 @@
 			path = "文明嘉兴/Controller/NewsViewController";
 			sourceTree = "<group>";
 		};
-		4430E3EC1D115AB300C160B6 /* YCSegmentViewController */ = {
-			isa = PBXGroup;
-			children = (
-				4430E3ED1D115AB300C160B6 /* YcSegmentView.h */,
-				4430E3EE1D115AB300C160B6 /* YcSegmentView.m */,
-			);
-			path = YCSegmentViewController;
-			sourceTree = "<group>";
-		};
 		44417F691D07BF49007E6A6E /* NewsTableViewCell */ = {
 			isa = PBXGroup;
 			children = (
@@ -402,6 +396,17 @@
 			);
 			name = defaultPicture;
 			path = "文明嘉兴/View/defaultPicture";
+			sourceTree = "<group>";
+		};
+		448445A81D1E405900E79476 /* YSLContainerViewController */ = {
+			isa = PBXGroup;
+			children = (
+				448445A91D1E405900E79476 /* YSLContainerViewController.h */,
+				448445AA1D1E405900E79476 /* YSLContainerViewController.m */,
+				448445AB1D1E405900E79476 /* YSLScrollMenuView.h */,
+				448445AC1D1E405900E79476 /* YSLScrollMenuView.m */,
+			);
+			path = YSLContainerViewController;
 			sourceTree = "<group>";
 		};
 		449E17F91D0837C400D47907 /* AFNetworking */ = {
@@ -515,8 +520,8 @@
 		44CC71B11D07F13500048A7D /* Framework */ = {
 			isa = PBXGroup;
 			children = (
+				448445A81D1E405900E79476 /* YSLContainerViewController */,
 				44AEB8FD1D1B77A900C7735A /* MBProgressHUD */,
-				4430E3EC1D115AB300C160B6 /* YCSegmentViewController */,
 				446054D31D0D21E200EADD6B /* MJExtension */,
 				449E17F91D0837C400D47907 /* AFNetworking */,
 				449E18071D0837C400D47907 /* UIKit+AFNetworking */,
@@ -841,7 +846,6 @@
 				44CC72451D07F1E200048A7D /* MJRefreshGifHeader.m in Sources */,
 				44CC72601D07F1E200048A7D /* UIImage+WebP.m in Sources */,
 				44CC72421D07F1E200048A7D /* MJRefreshBackGifFooter.m in Sources */,
-				4430E3EF1D115AB300C160B6 /* YcSegmentView.m in Sources */,
 				44CC72561D07F1E200048A7D /* SDImageCache.m in Sources */,
 				44CC72471D07F1E200048A7D /* MJRefreshStateHeader.m in Sources */,
 				44D76BA71D0291CD00D67B5D /* AppDelegate.m in Sources */,
@@ -866,6 +870,7 @@
 				449E18261D0837C400D47907 /* UIButton+AFNetworking.m in Sources */,
 				44CC724C1D07F1E200048A7D /* UIView+MJExtension.m in Sources */,
 				44CC72501D07F1E200048A7D /* TAPageControl.m in Sources */,
+				448445AD1D1E405900E79476 /* YSLContainerViewController.m in Sources */,
 				446054F31D0D21E200EADD6B /* NSObject+MJProperty.m in Sources */,
 				449E18231D0837C400D47907 /* AFImageDownloader.m in Sources */,
 				446054ED1D0D21E200EADD6B /* MJProperty.m in Sources */,
@@ -891,6 +896,7 @@
 				44CC725C1D07F1E200048A7D /* SDWebImagePrefetcher.m in Sources */,
 				44CC72411D07F1E200048A7D /* MJRefreshAutoStateFooter.m in Sources */,
 				44CC72551D07F1E200048A7D /* NSData+ImageContentType.m in Sources */,
+				448445AE1D1E405900E79476 /* YSLScrollMenuView.m in Sources */,
 				44CC72531D07F1E200048A7D /* UIView+SDExtension.m in Sources */,
 				44CC723A1D07F1E200048A7D /* MJRefreshAutoFooter.m in Sources */,
 				44CC724F1D07F1E200048A7D /* TADotView.m in Sources */,
